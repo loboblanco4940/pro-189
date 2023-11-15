@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sensei Japo</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+      
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+        <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+    </head>
+
+    <body style="margin : 0px; overflow: hidden;">
+        <a-scene  embedded arjs="sourceType: webcam; debugUIEnabled: false;trakingMethod:best"
+        vr-mode-ui="enabled: false;">
+
+            <!--Recursos-->
+            <a-assets>
+                <a-asset-item id="dog" src="./assets/Animal/dog/scene.gltf"></a-asset-item>
+                <a-asset-item id="cat" src="./assets/Animal/cat/scene.gltf"></a-asset-item>
+                <a-asset-item id="elephant" src="./assets/Animal/elephant/scene.gltf"></a-asset-item>
+                <a-asset-item id="fish" src="./assets/Animal/fish/scene.gltf"></a-asset-item>
+                <a-asset-item id="lion" src="./assets/Animal/lion/scene.gltf"></a-asset-item>
+                <a-asset-item id="polar bear" src="./assets/Animal/polar bear/scene.gltf"></a-asset-item>
+            </a-assets>
+
+            <a-marker preset="hiro">
+                <a-entity id="dog" position="-0.1 0 0" gltf-model="#dog" rotation="0 0 0" scale="1 1 1" animation-mixer>       
+                </a-entity>
+
+                <a-entity id="cat" position="-0.1 0 0" gltf-model="#cat" rotation="0 0 0" scale="1 1 1" animation-mixer>       
+                </a-entity>
+
+                <a-entity id="elephant" position="-0.1 0 0" gltf-model="#elephant" rotation="0 0 0" scale="1 1 1" animation-mixer>       
+                </a-entity>
+
+                <a-entity id="fish" position="-0.1 0 0" gltf-model="#fish" rotation="0 0 0" scale="1 1 1" animation-mixer>       
+                </a-entity>
+
+                <a-entity id="lion" position="-0.1 0 0" gltf-model="#lion" rotation="0 0 0" scale="1 1 1" animation-mixer>       
+                </a-entity>
+
+                <a-entity id="polar bear" position="-0.1 0 0" gltf-model="#polar bear" rotation="0 0 0" scale="1 1 1" animation-mixer>       
+                </a-entity>
+            </a-marker>
+        </a-scene>
+    </body>
+</html>
